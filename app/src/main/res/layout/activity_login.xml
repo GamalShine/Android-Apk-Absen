@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    tools:context=".LoginActivity"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="35dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="40dp"
+            android:text="Sign In"
+            android:fontFamily="@font/semibold"
+            android:gravity="center"
+            android:textSize="31dp"
+            android:textColor="@color/colorAccent"/>
+
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="NIK"
+            android:textSize="15dp"
+            android:background="@drawable/ic_borderlogin"
+            android:inputType="text"
+            android:drawableEnd="@drawable/ic_user"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:textSize="15dp"
+            android:background="@drawable/ic_borderlogin"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/ic_pass"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="@font/semibold"
+            android:text="Show Password"
+            android:id="@+id/showpassword"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/semibold"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Login" />
+
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/semibold"
+            android:text="Dont' have an account? Register"
+            android:onClick="regis"
+            android:textAlignment="center"
+            android:textSize="13.5dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</LinearLayout>

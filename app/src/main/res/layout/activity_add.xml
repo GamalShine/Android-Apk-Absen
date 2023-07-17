@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="730dp"
+    tools:context=".AddActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:subtitleTextColor="@color/colorAccent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="backtomain2"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dp"
+                android:text="Sign In Present"
+                android:textColor="@color/white"
+                android:fontFamily="@font/semibold"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Status"
+                android:textColor="@color/black"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:id="@+id/spWS"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Office City"
+                android:textColor="@color/black"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="25dp"/>
+            <Spinner
+                android:id="@+id/spKOTA"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WFO Location"
+                android:textColor="@color/black"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="25dp"/>
+            <Spinner
+                android:id="@+id/spLOKASI"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Condition"
+                android:textColor="@color/black"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="25dp"/>
+            <Spinner
+                android:id="@+id/spHEALTH"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="100dp"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/rdAksi"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdHadir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
+                    android:checked="true"
+                    android:text="Present"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/semibold"
+        android:text="submit"
+        android:textColorLink="#FFFFFF"
+        app:showAsAction="always" />
+
+</LinearLayout>

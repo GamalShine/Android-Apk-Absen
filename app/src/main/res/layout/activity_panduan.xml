@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".PanduanActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:subtitleTextColor="@color/colorAccent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="backtomenu"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="Guide Form"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/semibold"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="85dp"
+        android:text="Panduan Absen PT.STI Tangerang"
+        android:textSize="25dp"
+        android:fontFamily="@font/lobster"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginTop="148dp"
+        android:text="      Pada Aplikasi absensi PT.STI ini  terdapat Form Login, Form Absen dan Form Riwayat Absensi.Setiap Karyawan wajib melakukan absensi guna memberkan keterangan hadir atau tidaknya karyawan."
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="255dp"
+        android:text="      Karyawan yang hadir pada hari itu wajib mengisi absen dengan keterangan yang sudah di sediakan di form Absen."
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:textSize="17.5dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="325dp"
+        android:text="      Dengan mengisi NIK, Nama lengkap, Status tempat kerja, Kota perusahaan, Gedung yang ditempati dan Memebrei keterangan keadaan tubuh (Sehat / Sakit). Jika karyawan sakit maka pilihlah keterangan Sick dan apabila Karyawan sehat makan pilihlah keterangan Health."
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="465dp"
+        android:text="      Pada opsi Sick karyawan tidak perlu mengisi keterangan Status Kerja, Kota perusahaan dan Gedung tempat berkerja, Karyawan bisa pilih Keterangan (none)."
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="555dp"
+        android:text="      Apabila Terdapat kendala dalam melakukan absen Segera Laporkan ke pihak Kantor Terima Kasih."
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="isiabsen"
+        android:layout_marginRight="40dp"
+        android:text="Isi Absenmu"/>
+
+</RelativeLayout>

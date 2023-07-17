@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/in_out"
+    tools:context=".HistoryInOutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:subtitleTextColor="@color/colorAccent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="kemainH"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dp"
+                android:text="Your History Absent Form"
+                android:textColor="@color/white"
+                android:fontFamily="@font/semibold"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="See Your Absent History"
+        android:fontFamily="@font/semibold"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="95dp"
+        android:textColor="#C6000000"
+        android:textSize="30dp"/>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        />
+
+    <AnalogClock
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="230dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="Time Present"
+        android:gravity="left"
+        android:textSize="20dp"
+        android:textColor="#C6000000"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/semibold"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="Time Out"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:textColor="#C6000000"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="155dp"
+        android:fontFamily="@font/semibold"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="\t\t08.00 AM"
+        android:gravity="left"
+        android:textSize="20dp"
+        android:textColor="#C6000000"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="270dp"
+        android:fontFamily="@font/semibold"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="\t16.30 PM"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:textColor="#C6000000"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="155dp"
+        android:fontFamily="@font/semibold"/>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/ic_border_in"
+        android:gravity="center"
+        android:onClick="masukA"
+        android:text="History \n\nPresent IN"
+        android:fontFamily="@font/semibold"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="280dp"
+        android:text="History \n\nPresent OUT"
+        android:textSize="18dp"
+        android:fontFamily="@font/semibold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="210dp"
+        android:background="@drawable/ic_border_out"
+        android:onClick="keluarA"/>
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="15dp"
+        android:text="from"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="680dp"/>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:text="Corporation"
+        android:fontFamily="@font/bolditalic"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="695dp"/>
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="20dp"
+        android:text="PT.STI"
+        android:gravity="center"
+        android:fontFamily="@font/bolditalic"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="695dp"
+        android:layout_marginRight="85dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".TerimaKasihActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="420dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="20dp"
+            android:text="Thank You !!"
+            android:fontFamily="@font/semibold"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="22.0sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="backtomain3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/terimakasih"/>
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/semibold"
+        android:text="Thank You, You have done an Online Present"
+        android:textSize="25dp" />
+
+</RelativeLayout>

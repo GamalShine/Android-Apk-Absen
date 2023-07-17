@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="-40dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/logomain" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Hai, Welcome to PT.STI\nhappy working !"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:fontFamily="@font/semibold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="65dp"
+        android:clipToPadding="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:background="@color/tungu">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/ic_border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/sun" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Good Morning"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="#FF5D4CC6"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/ic_border"
+                android:gravity="center"
+                android:onClick="absensi"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/absent" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Present"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="#FF5D4CC6"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:clipToPadding="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:onClick="logout2"
+                android:background="@drawable/ic_border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ic_pass" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:fontFamily="@font/semibold"
+                    android:textColor="#FF5D4CC6"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_border"
+                android:gravity="center"
+                android:onClick="riwayat"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/riwayat" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/semibold"
+                    android:gravity="center"
+                    android:text="Present Hsitory"
+                    android:textColor="#FF5D4CC6"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="15dp"
+        android:text="from"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="410dp"
+        android:layout_height="20dp"
+        android:text="PT.STI Corporation"
+        android:gravity="center"
+        android:fontFamily="@font/bolditalic"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+
